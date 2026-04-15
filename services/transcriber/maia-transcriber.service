@@ -1,0 +1,28 @@
+# maia transcriber systemctl service configuration
+#
+# installation:
+#    - cd /etc/systemd/system
+#    - sudo ln -s /home/administrator/maia/demo/services/transcriber/maia-transcriber.service maia-transcriber.service
+#    - sudo systemctl daemon-reload
+#    - sudo systemctl enable --now maia-transcriber.service
+#
+
+[Unit]
+Description=Medinfras AI Assistant Transcriber - demo
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/administrator/maia/demo/services/transcriber
+User=administrator
+EnvironmentFile=/home/administrator/maia/demo/services/transcriber/.env
+Environment=SERVICE_HOST=0.0.0.0
+Environment=SERVICE_PORT=4010
+ExecStart=/bin/bash -lc '/home/administrator/maia/demo/services/transcriber/venv/bin/uvicorn main:app --host "$SERVICE_HOST" --port "$SERVICE_PORT" --no-access-log --workers 1'
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

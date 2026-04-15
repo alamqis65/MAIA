@@ -1,0 +1,142 @@
+{
+  "info": {
+    "name": "Gemini Audio Upload & Generate (Full Auto)",
+    "_postman_id": "auto-audio-collection-123",
+    "description": "Upload audio to Gemini API and generate description (auto vars, file size, mime detection)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Init Upload (Get Upload URL)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "const fs = require('fs');",
+              "const path = pm.collectionVariables.get('AUDIO_PATH');",
+              "if (path) {",
+              "  try {",
+              "    const stats = fs.statSync(path);",
+              "    pm.collectionVariables.set('NUM_BYTES', stats.size);",
+              "    console.log('NUM_BYTES set to', stats.size);",
+              "    ",
+              "    // Simple mime detection",
+              "    let mime = 'application/octet-stream';",
+              "    if (path.endsWith('.mp3')) mime = 'audio/mpeg';",
+              "    else if (path.endsWith('.wav')) mime = 'audio/wav';",
+              "    else if (path.endsWith('.ogg')) mime = 'audio/ogg';",
+              "    pm.collectionVariables.set('MIME_TYPE', mime);",
+              "    console.log('MIME_TYPE set to', mime);",
+              "  } catch (e) {",
+              "    console.error('Error reading file info', e);",
+              "  }",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "let uploadUrl = pm.response.headers.get('x-goog-upload-url');",
+              "if (uploadUrl) {",
+              "  pm.collectionVariables.set('UPLOAD_URL', uploadUrl);",
+              "  console.log('UPLOAD_URL set:', uploadUrl);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "x-goog-api-key", "value": "{{GEMINI_API_KEY}}" },
+          { "key": "X-Goog-Upload-Protocol", "value": "resumable" },
+          { "key": "X-Goog-Upload-Command", "value": "start" },
+          { "key": "X-Goog-Upload-Header-Content-Length", "value": "{{NUM_BYTES}}" },
+          { "key": "X-Goog-Upload-Header-Content-Type", "value": "{{MIME_TYPE}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file\": {\n    \"display_name\": \"AUDIO\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://generativelanguage.googleapis.com/upload/v1beta/files",
+          "protocol": "https",
+          "host": ["generativelanguage", "googleapis", "com"],
+          "path": ["upload", "v1beta", "files"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Upload Audio File",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "let json = pm.response.json();",
+              "if (json && json.file && json.file.uri) {",
+              "  pm.collectionVariables.set('FILE_URI', json.file.uri);",
+              "  console.log('FILE_URI set:', json.file.uri);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Length", "value": "{{NUM_BYTES}}" },
+          { "key": "X-Goog-Upload-Offset", "value": "0" },
+          { "key": "X-Goog-Upload-Command", "value": "upload, finalize" }
+        ],
+        "body": {
+          "mode": "file",
+          "file": {
+            "src": "{{AUDIO_PATH}}"
+          }
+        },
+        "url": {
+          "raw": "{{UPLOAD_URL}}"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Generate Content from Audio",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "x-goog-api-key", "value": "{{GEMINI_API_KEY}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        { \"text\": \"Describe this audio clip\" },\n        { \"file_data\": { \"mime_type\": \"{{MIME_TYPE}}\", \"file_uri\": \"{{FILE_URI}}\" } }\n      ]\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+          "protocol": "https",
+          "host": ["generativelanguage", "googleapis", "com"],
+          "path": ["v1beta", "models", "gemini-2.5-flash:generateContent"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    { "key": "GEMINI_API_KEY", "value": "AIzaSyDUAsFwgnR_VZfo6e_WrAen87hVWHJgKy0" },
+    { "key": "NUM_BYTES", "value": "" },
+    { "key": "MIME_TYPE", "value": "" },
+    { "key": "AUDIO_PATH", "value": "C:/Users/QIS-065/Downloads/WhatsApp Audio 2025-09-19 at 12.52.07_32a280b1.mp3" },
+    { "key": "UPLOAD_URL", "value": "" },
+    { "key": "FILE_URI", "value": "" }
+  ]
+}

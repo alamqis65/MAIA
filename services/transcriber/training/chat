@@ -1,0 +1,183 @@
+benny0924: @workspace please analyze and examine this workspace/project. does this project have the ability to learn and be trained? or just do transcribe (STT) only? 
+
+Workspace: Collecting workspace informationProject purpose: runtime speech-to-text (STT) transcription plus text normalization and optional RabbitMQ publishing. No training / fine‑tuning capability is implemented.
+
+Evidence:
+- Model loading only: `get_model`, `_load_model_with_ssl_fallback` just call `whisper.load_model(WHISPER_MODEL, ...)` using a pretrained checkpoint.
+- Transcription pipeline: `transcribe_audio_file` invokes `model.transcribe(...)` with configurable decoding options from `DEFAULT_TRANSCRIBE_OPTIONS`.
+- API layer: `transcribe` wraps transcription and returns/publishes results.
+- Normalization only: `normalize_clinical_id` applies phrase/regex fixes loaded via `load_fixes` and the YAML file clinical_fixes.yaml.
+- Utilities: download_model.py pre-downloads the pretrained model; no dataset ingestion or gradient steps.
+- Dependencies in requirements.txt include `openai-whisper`, not libraries typically used for custom Whisper fine‑tuning (and Whisper’s public repo does not expose an official fine‑tuning API).
+
+Absent:
+- No training loops, optimizers, schedulers, dataset loaders, or gradient updates.
+- No code modifying model weights.
+- No corpus management or labeling workflow.
+
+Conclusion: The service performs inference-only (STT + normalization + optional message publishing). It cannot “learn” or be trained further in its current form.
+
+If future fine‑tuning is desired (high level outline):
+1. Add a data pipeline (audio + transcripts) loading (e.g., torchaudio datasets).
+2. Clone and adapt the original Whisper training/fine‑tuning approach (unofficial; Whisper repo doesn’t provide a simple fine‑tune script).
+3. Introduce a training script with optimizer, LR schedule, mixed precision, and checkpoint saving.
+4. Separate inference environment from training dependencies.
+
+Referenced symbols:
+- `get_model`
+- `_load_model_with_ssl_fallback`
+- `transcribe_audio_file`
+- `normalize_clinical_id`
+- `load_fixes`
+- `DEFAULT_TRANSCRIBE_OPTIONS`
+- `WHISPER_MODEL`
+- `publish_transcript`
+- `transcribe`
+
+Files:
+- whisper_service.py
+- router.py
+- config.py
+- download_model.py
+- clinical_fixes.yaml
+- rabbitmq.py
+- requirements.txt
+
+Answer: Inference-only STT service with normalization; no training capability present.
+
+benny0924: what need to do if I wanted to add a simple training?
+
+GitHub Copilot: I'll read the existing requirements.txt to tailor dependency change recommendations for adding training. 
+
+Read [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/requirements.txt)
+
+I'll read whisper_service.py to see how models are loaded, informing how to integrate a training script without disrupting inference. 
+
+Read [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/whisper_service.py)
+
+I'll read config.py to see configurable parameters relevant for training extension. 
+
+Read [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/config.py)
+
+I'll add a minimal training scaffold (separate from existing inference) including a LoRA fine-tuning script, training README, and extra requirements so you can start "simple training". 
+
+Created [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/training)
+
+Created [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/training/README.md)
+
+Created [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/training/requirements-training.txt)
+
+Created [](file:///Users/bennychandra/asclepius/medinfras.ai/services/transcriber/training/train_lora.py)
+
+I'll summarize progress and next steps without further edits since training scaffold added; imports unresolved until user installs extra requirements.
+Here’s a concrete path to “add a simple training” plus an initial scaffold I just created for you.
+
+## ✅ What’s now in the repo
+Added under training:
+- README.md: Explains experimental LoRA fine‑tuning approach, data format, quick start, limitations.
+- `requirements-training.txt`: Extra deps (PEFT, Accelerate, Transformers, jiwer, soundfile) kept separate from production.
+- `train_lora.py`: Minimal LoRA adapter fine‑tuning loop over a small custom dataset (JSONL or TSV). Saves adapter checkpoints per epoch.
+
+No inference code was modified yet—your live service remains inference‑only.
+
+## 🔧 What “simple training” means here
+Instead of full Whisper weight updates (heavy + risky), we:
+- Freeze base Whisper model.
+- Insert LoRA adapters into attention/FFN linear layers.
+- Optimize only adapter params (fast, small checkpoints).
+- Compute a naive cross‑entropy over token IDs (approximation; Whisper wasn’t designed with a packaged training API).
+- Optional WER metric if `jiwer` installed.
+
+## 🧱 Steps to use the scaffold
+
+### 1. Prepare a small dataset
+Example `data/sample.jsonl` (create this file):
+```
+{"audio_path": "/absolute/path/utt1.wav", "text": "contoh kalimat satu", "language": "id"}
+{"audio_path": "/absolute/path/utt2.wav", "text": "contoh kalimat dua"}
+```
+Keep clips short (<30s) for early tests.
+
+### 2. Install training extras (in a virtualenv)
+```
+pip install -r training/requirements-training.txt
+```
+(Those unresolved import warnings you saw disappear after this.)
+
+If you need CPU-only and want to avoid CUDA wheels, ensure torch install matches your environment (already pinned in main requirements—can reuse the existing env).
+
+### 3. Run a smoke test
+```
+python -m training.train_lora \
+  --model small \
+  --data data/sample.jsonl \
+  --output-dir training/outputs/exp1 \
+  --epochs 1 \
+  --limit-train 8 \
+  --batch-size 2
+```
+You should see:
+- Trainable parameter summary (LoRA only)
+- Loss logs every few steps
+- `epoch0/` folder in `outputs/exp1` with adapter weights + `val_metrics.json`.
+
+### 4. Evaluate more rigorously (later)
+Add a held‑out dataset slice; adjust split logic or pass a separate validation file (would require a small code tweak—see “Next Improvements”).
+
+### 5. (Future) Use adapters in inference
+You’ll need a helper to:
+1. Load base model (as current `get_model` does).
+2. Load LoRA adapter weights (`PeftModel.from_pretrained` or merge).
+3. Optionally merge and continue normal `model.transcribe`.
+
+I didn’t wire this yet to keep risk low; see “Next Improvements”.
+
+## 🧪 Suggested minimal hardware workflow
+- Start with `--model small` or even `base` for faster iteration.
+- If GPU (CUDA) available: mixed precision already enabled.
+- On CPU/MPS: training will be slower; consider reducing `--lora-r` (e.g. 8) and `--limit-train`.
+
+## ⚠️ Limitations / Caveats
+- The openai-whisper package is inference-oriented; internal APIs may change—pin version (already pinned).
+- Loss function is approximate; real pretraining uses complex sampling and multilingual tokens.
+- No advanced features: curriculum, scheduler, gradient clipping, proper tokenizer BOS/EOT handling nuances.
+- WER metric is optional & naive (not language-normalized).
+
+## 🧩 If you want fuller training later
+Add / adjust:
+- Learning rate scheduler (cosine or linear warmup via `torch.optim.lr_scheduler`).
+- Proper train/val/test splits + stratification by duration.
+- Automatic mixed precision on MPS (when stable).
+- Gradient checkpointing for large models.
+- Data augmentation (noise mix, time masking).
+
+## 🚀 Quick roadmap (ordered)
+1. (Done) Minimal LoRA training script.
+2. Add adapter loading in whisper_service.py behind `WHISPER_LORA_ADAPTER` env var.
+3. Provide `evaluate_adapters.py` script for a held-out set.
+4. Add unit test that loads a tiny dummy adapter to ensure no regression on service start.
+5. Optional: package adapters artifact + metadata (timestamp, data hash, WER).
+
+## 🔒 Compliance / Safety Considerations
+- Ensure transcripts don’t include PHI/PII unless you have consent and secure storage.
+- Keep raw audio out of logs.
+- Track dataset provenance and license constraints.
+
+## 🛠 How to integrate adapters (code sketch for later)
+Inside whisper_service.py after loading base model:
+```
+from peft import PeftModel
+adapter_dir = os.getenv("WHISPER_LORA_ADAPTER")
+if adapter_dir and os.path.isdir(adapter_dir):
+    model = PeftModel.from_pretrained(model, adapter_dir)
+    model = model.merge_and_unload()  # optional: bake weights then drop PEFT overhead
+```
+
+## ✅ What to do next (choose one)
+A. You just want training: try the smoke test now.  
+B. You want inference to use adapters: tell me and I’ll add the environment hook + safe loader.  
+C. You want evaluation script: I can add `evaluate_lora.py`.
+
+Let me know which follow-up you’d like and I’ll implement it.
+
+Made changes.

@@ -1,0 +1,26 @@
+fixes:
+   'saksion endotrakeal': 'suction endotrakeal'
+   'saksian endotrakel': 'suction endotrakeal'
+   'osigen': 'oksigen'
+   'hatred': 'nadi'
+   'penunjam': 'penunjang'
+   'cernih': 'jernih'
+   'komposmentis': 'compos mentis'
+   'HP': 'Hb'
+   'hypocasemi': 'hipokalsemia'
+   'wining ventilator': 'weaning ventilator'
+   'fluconaso': 'fluconazole'
+   'kurin': 'urin'
+   'ureung': 'ureum'
+   'dipliksaikan': 'diperiksakan'
+   'dipliksakan': 'diperiksakan'
+   'dipiksakan': 'diperiksakan'
+   'dipiksa kan': 'diperiksakan'
+   'di pertanggan': 'dipertahankan'
+   'di pertanggahan': 'dipertahankan'
+   'dipertanggian': 'dipertahankan'
+   'pertanggahan': 'pertahankan'
+   'suju': 'tujuh'
+patterns:
+   - regex: "\\b(\\d{2,3})x(\\d{2,3})\\b"
+     replace: "\\1/\\2"

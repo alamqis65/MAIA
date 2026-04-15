@@ -1,0 +1,32 @@
+{
+    "patientId": "Not documented",
+    "displayId": "MRN0011233",
+    "rawTranscript": "pasti ini tampak lemas, sesek berkurang, terpasang O2 binasal 3 liter per menit terus CVC infusnya 2 jalur menetes lancar, akral hangat, nadine kuat, NGT in, DJ in, train in, balutan diperutin daerembus program infus via CVC kehadaran kompost mentise, tekanan daerah 120, perlapan puluh, suhu ini 37,3 Satu rasi oksigine, 98%, tenyut nadine 1, lajur nafase Songolas, GCS M4, GCS M6, GCS VN5, GCS Total E 15. Masalah keperawatan aktif nyari perioperatif, resiko hypothermie, bersihkan jalur nafase yang tidak efektif dan deficit perawatan diri. Lanjutkan, intervensi DP1-4. Hasil PA dan kulturnya sudah keluar dan sudah konfirm ke doktor sikit. Program ganti NGT dan DJNnya hari minggu, DJNnya pitunga atau CC. Jumlah drain barovak, 48 CC, drain jack, 500 CC. Udah konfirm juga ke doktor sikit. Latian makan minum lewat mulut sebelum af NGT. Terus advice dari doktor Soyatni, ada ACS-nya pemberandeksa metason sama di penhydramin. Evaluasi dulu sampai jam 17, bila tidak sesek, oktal bin sisa boleh dimasukkan pelan-pelan Furus emit, standby, bila sesek Bila sesek lagi, ekstra deksa metason lagi Terus, advise dari doktor sikit, mikrolak soup satu ekstra Terus setep latih buat mobilisasi Drain yang bukan berofak, tiap ganti shift drain diklaim 2 jam Terus dibuka, sampai ganti shift berikutnya, klaim 2 jam kemudian dibuka dan seterusnya Program di IT dan terapi lain sesuai advis dari Doktor Syatni.",
+    "soapi": {
+        "subjective": {
+            "keluhan_utama": "Not documented",
+            "riwayat_penyakit_sekarang": "Not documented",
+            "gejala_lain": "Not documented"
+        },
+        "objective": {
+            "pemeriksaan_fisik": "Pasien tampak lemas, sesak berkurang. Terpasang O2 binasal 3 liter/menit, CVC infus 2 jalur menetes lancar, akral hangat. NGT in, DJ in, drain in. Balutan di perut. GCS E4 M6 V5, Total 15.",
+            "tanda_vital": "Tekanan darah 120/80 mmHg, suhu 37,3°C, saturasi oksigen 98%, denyut nadi 1x/menit, laju napas 19x/menit.",
+            "hasil_lab": "Hasil PA dan kultur sudah keluar."
+        },
+        "assessment": {
+            "diagnosa": "ACS (Acute Coronary Syndrome).",
+            "kesan_klinis": "Masalah keperawatan aktif: nyeri perioperatif, risiko hipotermia, bersihan jalan napas tidak efektif, defisit perawatan diri.",
+            "diagnosa_banding": "Not documented"
+        },
+        "plan": {
+            "terapi": "Pemberian deksametason dan dipenhidramin. Evaluasi sampai jam 17, bila tidak sesak, oktalbin sisa boleh dimasukkan pelan-pelan. Furosemid standby bila sesak. Ekstra deksametason bila sesak lagi. Mikrolak sup satu ekstra. Program diit dan terapi lain sesuai advis dari dr. Syatni.",
+            "obat": "Deksametason, Dipenhidramin, Oktalbin, Furosemid, Mikrolak.",
+            "tindak_lanjut": "Lanjutkan intervensi DP1-4. Program ganti NGT dan DJN hari Minggu. Latihan makan minum lewat mulut sebelum aff NGT. Latih mobilisasi. Drain yang bukan berovak, tiap ganti shift drain diklem 2 jam, kemudian dibuka sampai ganti shift berikutnya, klaim 2 jam kemudian dibuka dan seterusnya."
+        },
+        "intervention": {
+            "tindakan": "Terpasang O2 binasal 3 liter/menit, CVC infus 2 jalur, NGT, DJ, drain. Balutan di perut.",
+            "prosedur": "Ganti NGT dan DJN hari Minggu. Latihan makan minum lewat mulut sebelum aff NGT. Latih mobilisasi. Klaim drain 2 jam tiap ganti shift.",
+            "kondisi_darurat": "Furosemid standby bila sesak. Ekstra deksametason bila sesak lagi."
+        }
+    }
+}

@@ -1,0 +1,336 @@
+{
+  "language": "id",
+  "transcript": "Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari suction endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih jernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien compos mentis masih tampak sakit berat berat dengan tekanan darah 156 x 59 nadi 86, frekuensi napas 17, suhu pasien 37,6, saturasi oksigen 92%. Dari pembicara status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen asli tampak distensi dengan bising usus yang menurun ekstremitas pasien didapatkan adanya pitting edema dari hasil pemerisan penunjang didapatkan hb menurun jadi 8,3 dengan hasil electrolyte adanya hipokal semi 1,89 Dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 tujuh. Kesan hari ini pasien masih belum bisa dilakukan weaning ventilator, masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini, untuk obatan fluconazole diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis dipertahankan tetap. Untuk infus, cairan dipertahankan tetap, untuk diet bisa ditingkatkan bertahap. Untuk urin agar tetap dipantau dan hari ini tolong diperiksakan BGA-nya. Terima kasih.",
+  "segment_count": 21,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 17.0,
+      "text": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari suction endotrakeal selang ETT-nya masih relatif banyak lendirnya.",
+      "tokens": [
+        50364, 14199, 1053, 630, 1035, 6163, 38126, 11, 680, 330, 2504, 17017,
+        33264, 7408, 18943, 11063, 1371, 335, 11, 1736, 1053, 31510, 7362, 2034,
+        12, 11980, 2034, 3277, 1082, 20697, 21774, 347, 15597, 318, 5461, 313,
+        6967, 310, 424, 330, 304, 5851, 656, 462, 28178, 12, 7457, 31510, 22441,
+        351, 25808, 21774, 347, 7457, 13, 51214
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.417608589961611,
+      "compression_ratio": 1.3828125,
+      "no_speech_prob": 0.18865139782428741
+    },
+    {
+      "id": 1,
+      "seek": 1700,
+      "start": 17.0,
+      "end": 22.0,
+      "text": " Tapi cenderung cair dan warnanya lebih jernih dibandingkan kemarin.",
+      "tokens": [
+        50364, 25386, 269, 3216, 1063, 269, 1246, 3277, 12286, 8791, 20451, 269,
+        1248, 4247, 23064, 42389, 5225, 803, 6209, 259, 13, 50614
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20418527391221789,
+      "compression_ratio": 1.481012658227848,
+      "no_speech_prob": 0.051451485604047775
+    },
+    {
+      "id": 2,
+      "seek": 1700,
+      "start": 22.0,
+      "end": 32.0,
+      "text": " Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya.",
+      "tokens": [
+        50614, 8256, 2034, 1082, 20697, 4038, 259, 11, 21424, 514, 34867, 18943,
+        1796, 2081, 15178, 614, 8791, 803, 5767, 24729, 26069, 1082, 20697,
+        4038, 259, 7457, 13, 51114
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20418527391221789,
+      "compression_ratio": 1.481012658227848,
+      "no_speech_prob": 0.051451485604047775
+    },
+    {
+      "id": 3,
+      "seek": 1700,
+      "start": 32.0,
+      "end": 39.0,
+      "text": " Dari pemeriksaan fisik, kesadaran pasien compos mentis masih tampak sakit berat",
+      "tokens": [
+        51114, 413, 3504, 280, 29660, 1035, 5790, 282, 36609, 1035, 11, 16050,
+        345, 17142, 1736, 1053, 5207, 79, 329, 518, 271, 31510, 21424, 514,
+        23366, 270, 5948, 267, 51464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.20418527391221789,
+      "compression_ratio": 1.481012658227848,
+      "no_speech_prob": 0.051451485604047775
+    },
+    {
+      "id": 4,
+      "seek": 3900,
+      "start": 39.0,
+      "end": 51.76,
+      "text": " berat dengan tekanan darah 156 x 59 nadi 86, frekuensi napas 17, suhu pasien 37,6, saturasi",
+      "tokens": [
+        50364, 5948, 267, 13877, 535, 5225, 282, 4072, 545, 2119, 21, 2031,
+        24624, 2385, 986, 26687, 11, 2130, 5279, 694, 72, 9296, 296, 3282, 11,
+        459, 12086, 1736, 1053, 13435, 11, 21, 11, 21160, 8483, 51002
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4493986235724555,
+      "compression_ratio": 1.3566433566433567,
+      "no_speech_prob": 0.31644555926322937
+    },
+    {
+      "id": 5,
+      "seek": 3900,
+      "start": 51.76,
+      "end": 54.0,
+      "text": " oksigen 92%.",
+      "tokens": [51002, 3003, 3213, 28225, 6856, 51114],
+      "temperature": 0.0,
+      "avg_logprob": -0.4493986235724555,
+      "compression_ratio": 1.3566433566433567,
+      "no_speech_prob": 0.31644555926322937
+    },
+    {
+      "id": 6,
+      "seek": 3900,
+      "start": 54.0,
+      "end": 63.2,
+      "text": " Dari pembicara status generalis, didapatkan pasien terkesan anemis dengan masih terdapat",
+      "tokens": [
+        51114, 413, 3504, 280, 33748, 299, 2419, 6558, 2674, 271, 11, 630,
+        22602, 5225, 1736, 1053, 1796, 5993, 282, 364, 443, 271, 13877, 31510,
+        1796, 67, 22602, 51574
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.4493986235724555,
+      "compression_ratio": 1.3566433566433567,
+      "no_speech_prob": 0.31644555926322937
+    },
+    {
+      "id": 7,
+      "seek": 6320,
+      "start": 63.2,
+      "end": 66.2,
+      "text": " adanya ronki pada kedua lapang paru",
+      "tokens": [
+        50364, 614, 8791, 367, 266, 2984, 26069, 42472, 4398, 13214, 656, 971,
+        84, 50514
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 8,
+      "seek": 6320,
+      "start": 66.92,
+      "end": 68.42,
+      "text": " untuk abdomen",
+      "tokens": [50550, 12711, 36494, 50625],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 9,
+      "seek": 6320,
+      "start": 69.14,
+      "end": 72.72,
+      "text": " asli tampak distensi dengan bising usus yang menurun",
+      "tokens": [
+        50661, 382, 2081, 21424, 514, 1483, 694, 72, 13877, 7393, 278, 505, 301,
+        5581, 1706, 36207, 50840
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 10,
+      "seek": 6320,
+      "start": 73.34,
+      "end": 76.84,
+      "text": " ekstremitas pasien didapatkan adanya pitting edema",
+      "tokens": [
+        50871, 13359, 372, 2579, 14182, 1736, 1053, 630, 22602, 5225, 614, 8791,
+        280, 2414, 1257, 5619, 51046
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 11,
+      "seek": 6320,
+      "start": 77.48,
+      "end": 82.96000000000001,
+      "text": " dari hasil pemerisan penunjang didapatkan hb menurun jadi 8,3",
+      "tokens": [
+        51078, 15597, 575, 388, 47690, 260, 14804, 3435, 409, 26925, 630, 22602,
+        5225, 276, 65, 1706, 36207, 19399, 1649, 11, 18, 51352
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 12,
+      "seek": 6320,
+      "start": 83.4,
+      "end": 89.28,
+      "text": " dengan hasil electrolyte adanya hipokal semi 1,89",
+      "tokens": [
+        51374, 13877, 575, 388, 39197, 975, 614, 8791, 8103, 453, 304, 12909,
+        502, 11, 21115, 51668
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5039118061894956,
+      "compression_ratio": 1.5680473372781065,
+      "no_speech_prob": 0.03406907245516777
+    },
+    {
+      "id": 13,
+      "seek": 8928,
+      "start": 89.28,
+      "end": 96.28,
+      "text": " Dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 tujuh.",
+      "tokens": [
+        50364, 3394, 803, 31916, 952, 344, 265, 449, 1736, 1053, 24940, 15330,
+        304, 4526, 3435, 36207, 282, 15597, 46122, 449, 7457, 8451, 29047, 2319,
+        459, 8954, 13, 50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2648169404716902,
+      "compression_ratio": 1.6310160427807487,
+      "no_speech_prob": 0.05265028402209282
+    },
+    {
+      "id": 14,
+      "seek": 8928,
+      "start": 98.28,
+      "end": 105.28,
+      "text": " Kesan hari ini pasien masih belum bisa dilakukan weaning ventilator, masih dengan gagal napas,",
+      "tokens": [
+        50814, 26898, 282, 33264, 7408, 1736, 1053, 31510, 48532, 14386, 11504,
+        42774, 261, 1760, 27498, 1639, 11, 31510, 13877, 34833, 304, 9296, 296,
+        11, 51164
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2648169404716902,
+      "compression_ratio": 1.6310160427807487,
+      "no_speech_prob": 0.05265028402209282
+    },
+    {
+      "id": 15,
+      "seek": 8928,
+      "start": 105.28,
+      "end": 115.28,
+      "text": " kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut.",
+      "tokens": [
+        51164, 803, 31916, 952, 31510, 15330, 304, 4526, 15465, 301, 26009,
+        4328, 1035, 11, 3277, 803, 31916, 952, 15330, 304, 4526, 364, 14058,
+        5581, 39290, 48532, 1026, 30724, 564, 284, 8483, 1796, 28512, 4247,
+        9326, 44090, 13, 51664
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2648169404716902,
+      "compression_ratio": 1.6310160427807487,
+      "no_speech_prob": 0.05265028402209282
+    },
+    {
+      "id": 16,
+      "seek": 11528,
+      "start": 115.28,
+      "end": 126.8,
+      "text": " Untuk program hari ini, untuk obatan fluconazole diturunkan dosisnya jadi 150mg sekali sehari.",
+      "tokens": [
+        50364, 8256, 2034, 1461, 33264, 7408, 11, 12711, 1111, 25649, 932, 1311,
+        266, 35281, 6176, 374, 3197, 282, 4491, 271, 7457, 19399, 8451, 76, 70,
+        369, 74, 5103, 369, 71, 3504, 13, 50940
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.36084747314453125,
+      "compression_ratio": 1.6428571428571428,
+      "no_speech_prob": 0.03263508528470993
+    },
+    {
+      "id": 17,
+      "seek": 11528,
+      "start": 126.8,
+      "end": 130.0,
+      "text": " Untuk obat-obatan lain, dosis dipertahankan tetap.",
+      "tokens": [
+        50940, 8256, 2034, 1111, 267, 12, 996, 25649, 29272, 11, 4491, 271,
+        1026, 13269, 656, 70, 21436, 23319, 569, 13, 51100
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.36084747314453125,
+      "compression_ratio": 1.6428571428571428,
+      "no_speech_prob": 0.03263508528470993
+    },
+    {
+      "id": 18,
+      "seek": 11528,
+      "start": 131.0,
+      "end": 138.56,
+      "text": " Untuk infus, cairan dipertahankan tetap, untuk diet bisa ditingkatkan bertahap.",
+      "tokens": [
+        51150, 8256, 2034, 1536, 301, 11, 269, 1246, 282, 1026, 13269, 656, 70,
+        21436, 23319, 569, 11, 12711, 6339, 14386, 274, 1748, 20876, 5225,
+        50098, 545, 569, 13, 51528
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.36084747314453125,
+      "compression_ratio": 1.6428571428571428,
+      "no_speech_prob": 0.03263508528470993
+    },
+    {
+      "id": 19,
+      "seek": 11528,
+      "start": 138.56,
+      "end": 144.1,
+      "text": " Untuk urin agar tetap dipantau dan hari ini tolong diperiksakan BGA-nya.",
+      "tokens": [
+        51528, 8256, 2034, 10072, 259, 623, 289, 23319, 569, 10460, 394, 1459,
+        3277, 33264, 7408, 281, 13025, 10460, 23292, 14910, 363, 12570, 12,
+        7457, 13, 51805
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.36084747314453125,
+      "compression_ratio": 1.6428571428571428,
+      "no_speech_prob": 0.03263508528470993
+    },
+    {
+      "id": 20,
+      "seek": 14410,
+      "start": 144.1,
+      "end": 146.1,
+      "text": " Terima kasih.",
+      "tokens": [50364, 6564, 4775, 35894, 13, 50464],
+      "temperature": 0.0,
+      "avg_logprob": -0.5332661356244769,
+      "compression_ratio": 0.6190476190476191,
+      "no_speech_prob": 0.07751956582069397
+    }
+  ],
+  "meta": {
+    "model": "small",
+    "ts": "2026-01-15T08:31:11.051776+07:00Z",
+    "started_at": "2026-01-15T08:28:55.394182+07:00Z",
+    "completed_at": "2026-01-15T08:31:11.051725+07:00Z",
+    "processing_seconds": 135.6575,
+    "audio_duration_seconds": 146.1,
+    "real_time_factor": 0.9285
+  }
+}

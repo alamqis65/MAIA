@@ -1,0 +1,47 @@
+# Transcription processing time (seconds): 99.017
+# Pasien didiksunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari suction endotrakeal selain ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih jernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien kompos mentis masih tampak sakit berat dengan tekanan darah 156x59 Hb86, frekuensi napas 17, dan suhu pasien 37,6, saturasi oksigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya peronki pada kedua lapang paru, untuk abdomen, si tampak distensi dengan bising usus yang menurun. Ekstremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjang, didapatkan Hb menurun jadi 8,3, dengan hasil electrolyte adanya Hb1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan weaning ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconazole diturunkan dosisnya jadi 150mg sekali sehari, untuk obat-obatan lain dosis dipertahankan tetap. Untuk infus cairan dipertahankan tetap, untuk diet bisa ditingkatkan bertahap. Untuk urin agar tetap dipantau dan hari ini tolong diperiksakan BGA-nya. Terima kasih.
+
+# RabbitMQ configuration
+RABBITMQ_URL=amqp://guest:guest@localhost:5672/
+RABBITMQ_EXCHANGE=asc.soapi
+RABBITMQ_QUEUE=transcription_results
+
+# Whisper configuration
+WHISPER_MODEL=small  # Options: tiny, base, small, medium, large
+#WHISPER_MODEL=medium  # Options: tiny, base, small, medium, large
+WHISPER_CACHE_DIR=./cache/whisper
+
+# Runtime behavior
+WHISPER_DEFAULT_LANGUAGE=id   # force Indonesian
+WHISPER_DEVICE=cpu            # Options: cpu, cuda, cuda:0 (leave blank for auto)
+#WHISPER_DEVICE=mps            # will fallback to cpu when not supported
+WHISPER_FP16=false            # set True if you have GPU with FP16
+WHISPER_SSL_FALLBACK=true     # Enable SSL fallback workaround
+
+# Threads tuning for CPU inference
+WHISPER_TORCH_NUM_THREADS=4
+WHISPER_TORCH_NUM_INTEROP_THREADS=1
+
+# Optional transcription tuning
+WHISPER_TASK=transcribe                   # transcribe=keep source language. Options: transcribe, translate
+WHISPER_TEMPERATURE=0.0                   # base temperature (can also be left unset to use library default tuple), default 0.0
+#WHISPER_TEMPERATURE_MAX=0.4               # max temperature to use with temperature increment on fallback, default 0.4
+#WHISPER_TEMPERATURE_INCREMENT_ON_FALLBACK=0.2         # increment > 0 turns (base, base+inc, ...) into a fallback tuple up to 1.0 (e.g. 0.0,0.2,0.4,...), default 0.2
+#WHISPER_BEAM_SIZE=1                       # beam search size, try 3-10, default 5
+WHISPER_BEAM_SIZE=5                       # beam search size, try 3-10, default 5
+WHISPER_PATIENCE=1.0                      # stop early if beams agree, 1.0 = no patience, try 1.0-1.5, default 1.0
+
+# noise suppression and other advanced options
+WHISPER_NO_SPEECH_THRESHOLD=0.6           # threshold for no speech detection, try 0.3-0.6, default 0.6, if still missing speech try (slowly) lowering to 0.45, 0.4, and so on.
+#WHISPER_NO_SPEECH_THRESHOLD=0.6           # threshold for no speech detection, try 0.3-0.6, default 0.6, if still missing speech try (slowly) lowering to 0.45, 0.4, and so on.
+WHISPER_LOGPROB_THRESHOLD=-0.5            # threshold for average log probability, default -0.5
+WHISPER_COMPRESSION_RATIO_THRESHOLD=2.4   # threshold for compression ratio, default 2.4
+WHISPER_CONDITION_ON_PREVIOUS=true        # use previous segment as prompt
+
+WHISPER_WORD_TIMESTAMPS=false             # set True to get word-level timestamps (slower), only if you need it
+WHISPER_LENGTH_PENALTY=0.0                # gently rewards longer hypotheses so it doesn’t stop early, default 0.0, try 0.1-0.3
+# WHISPER_BEST_OF=
+
+# initial prompt to help transcription in context
+#WHISPER_INITIAL_PROMPT="Catatan medis: tekanan darah, saturasi oksigen, pasien, perawat, dokter"
+WHISPER_INITIAL_PROMPT="Catatan medis pasien rawat inap. Istilah: tekanan darah, nadi, laju napas, suhu, saturasi oksigen, Hb, hematokrit, natrium, kalium, kalsium, ureum, kreatinin, hipokalsemia, ronki, ileus paralitik, pitting edema, weaning ventilator, ETT, suction endotrakeal, cairan dipertahankan, dosis dipertahankan, compos mentis, kedua lapang paru, mmHg, kali per menit, derajat Celcius, persen."

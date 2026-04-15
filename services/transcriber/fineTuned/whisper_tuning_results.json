@@ -1,0 +1,427 @@
+{
+  "best_params": {
+    "beam_size": 2,
+    "best_of": 1,
+    "compression_ratio_threshold": 2.4,
+    "condition_on_previous_text": true,
+    "fp16": false,
+    "logprob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "temperature": 0.0
+  },
+  "best_score": 0.27488151658767773,
+  "best_metrics": {
+    "wer": 0.27488151658767773,
+    "cer": 0.0688976377952756,
+    "word_accuracy": 72.51184834123224,
+    "char_accuracy": 93.11023622047244,
+    "ref_word_count": 211,
+    "hyp_word_count": 202,
+    "ref_char_count": 1524,
+    "hyp_char_count": 1479
+  },
+  "all_results": [
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.3175355450236967,
+      "metrics": {
+        "wer": 0.3175355450236967,
+        "cer": 0.08727034120734908,
+        "word_accuracy": 68.24644549763033,
+        "char_accuracy": 91.27296587926509,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1482
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6. Satu rasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 43.17196129995864
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3222748815165877,
+      "metrics": {
+        "wer": 0.3222748815165877,
+        "cer": 0.08333333333333333,
+        "word_accuracy": 67.77251184834124,
+        "char_accuracy": 91.66666666666666,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1472
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Cenderung cair dan warnanya lebih cernih dibanding kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59 hatred 86, frekuensi napas 17, suhu pasien 37,6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada keduanya 8 paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun jadi 8,3 dengan hasil electrolyte adanya Hippocal Semi 1,89. Kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini untuk obatan fluconaso diturunkan dosisnya jadi 150 mg sekali sehari. Untuk obat-obatan lain dosis di pertanggan tetap. Untuk infus cairan di pertanggan tetap untuk diet bisa ditingkatkan bertahap. Untuk kurin agak tetap di pantau dan hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 49.789663000032306
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.3175355450236967,
+      "metrics": {
+        "wer": 0.3175355450236967,
+        "cer": 0.08727034120734908,
+        "word_accuracy": 68.24644549763033,
+        "char_accuracy": 91.27296587926509,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1482
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6. Satu rasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 51.80943129991647
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3127962085308057,
+      "metrics": {
+        "wer": 0.3127962085308057,
+        "cer": 0.09317585301837271,
+        "word_accuracy": 68.72037914691943,
+        "char_accuracy": 90.68241469816273,
+        "ref_word_count": 211,
+        "hyp_word_count": 203,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1466
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakeal selang ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan darah 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6, saturasi oxigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru Untuk abdomen, asli tampak distensi dengan bising usus yang menurun, extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjang, didapatkan habi menurun jadi 8,3 dengan hasil electrolyte adanya hipokal semi 1,89 Dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari, untuk obat-obatan lain dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agak tetap di pantau dan hari ini tolong dipliksakan BGA-nya.",
+      "processing_time": 49.129126099986024
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.3175355450236967,
+      "metrics": {
+        "wer": 0.3175355450236967,
+        "cer": 0.08727034120734908,
+        "word_accuracy": 68.24644549763033,
+        "char_accuracy": 91.27296587926509,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1482
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6. Satu rasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 48.08868679997977
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3222748815165877,
+      "metrics": {
+        "wer": 0.3222748815165877,
+        "cer": 0.08727034120734908,
+        "word_accuracy": 67.77251184834124,
+        "char_accuracy": 91.27296587926509,
+        "ref_word_count": 211,
+        "hyp_word_count": 205,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1474
+      },
+      "hypothesis": " Pasien di Diksunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengamai penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari, untuk obat-obatan lain dosis di pertanggan tetap. Untuk infus, cairan di pertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap dipantau dan hari ini tolong dipiksa kan BGA-nya. Terima kasih.",
+      "processing_time": 50.691798600018956
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.3175355450236967,
+      "metrics": {
+        "wer": 0.3175355450236967,
+        "cer": 0.08727034120734908,
+        "word_accuracy": 68.24644549763033,
+        "char_accuracy": 91.27296587926509,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1482
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, hatred 86, frekuensi napas 17, suhu pasien 37,6. Satu rasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen, si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 50.050250100088306
+    },
+    {
+      "params": {
+        "beam_size": 1,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3744075829383886,
+      "metrics": {
+        "wer": 0.3744075829383886,
+        "cer": 0.09448818897637795,
+        "word_accuracy": 62.55924170616114,
+        "char_accuracy": 90.5511811023622,
+        "ref_word_count": 211,
+        "hyp_word_count": 211,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1499
+      },
+      "hypothesis": " Pasien didik sunar di perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakel selang ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin Untuk produksi urin tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan darah 156x59 hatred 86, frekuensi napas 17, dan suhu pasien 37,6, saturasi osigen 92%, dari pemeriksaan status generalis didapatkan pasien terkesan anemis dengan masih terdapat adanya Ketika adanya ronki pada keduanya lapang paru, untuk abdomen asli tampak distensi dengan bising usus yang menurun Extremitas pasien didapatkan adanya pitting edema, dari hasil pemeriksaan penunjam didapatkan habi menurun jadi 8,3, dengan hasil electrolyte adanya hippocal semi 1,89 Dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik Dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari Untuk obat-obatan lain dosis di pertanggan tetap Untuk infus, cairan di pertanggan tetap, untuk diet bisa ditingkatkan bertahap Untuk kurin agar tetap di pantau dan hari ini tolong dipliksaikan BGA-nya Terima kasih",
+      "processing_time": 47.57527519995347
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.27488151658767773,
+      "metrics": {
+        "wer": 0.27488151658767773,
+        "cer": 0.0688976377952756,
+        "word_accuracy": 72.51184834123224,
+        "char_accuracy": 93.11023622047244,
+        "ref_word_count": 211,
+        "hyp_word_count": 202,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1479
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59.886, frekuensi napas 17, suhu pasien 37.6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen asi tampak distensi dengan bising usus yang menurun. Ekstremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis dipertanggan tetap. Untuk infus, cairan dipertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 93.43219819990918
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3222748815165877,
+      "metrics": {
+        "wer": 0.3222748815165877,
+        "cer": 0.08858267716535433,
+        "word_accuracy": 67.77251184834124,
+        "char_accuracy": 91.14173228346458,
+        "ref_word_count": 211,
+        "hyp_word_count": 208,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1475
+      },
+      "hypothesis": " Pasien didik sunar di perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakeal selang ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pembariksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan darah 156x59 hatred 86, frekuensi napas 17, dan suhu pasien 37,6, saturasi osigen 92%. Dari pembariksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya adanya ronki pada keduanya lapang paru untuk abdomen si tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam didapatkan habi menurun jadi 8,3 dengan hasil electrolyte adanya di ukal semi 1,89 dan kemudian ureung pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari untuk obat-obatan lain dosis di pertanikan tetap. Untuk infus cairan di pertanikan tetap untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap dipantau dan hari ini tolong dipiksa kan BGA-nya. Terima kasih.",
+      "processing_time": 47.88144720008131
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.27488151658767773,
+      "metrics": {
+        "wer": 0.27488151658767773,
+        "cer": 0.0688976377952756,
+        "word_accuracy": 72.51184834123224,
+        "char_accuracy": 93.11023622047244,
+        "ref_word_count": 211,
+        "hyp_word_count": 202,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1479
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59.886, frekuensi napas 17, suhu pasien 37.6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen asi tampak distensi dengan bising usus yang menurun. Ekstremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis dipertanggan tetap. Untuk infus, cairan dipertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 92.59480139997322
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.4,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.35071090047393366,
+      "metrics": {
+        "wer": 0.35071090047393366,
+        "cer": 0.09973753280839895,
+        "word_accuracy": 64.92890995260663,
+        "char_accuracy": 90.02624671916011,
+        "ref_word_count": 211,
+        "hyp_word_count": 206,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1493
+      },
+      "hypothesis": " Pasien didiksunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakeal selang ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pembariksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59, heart rate 86, frekuensi napas 17, suhu pasien 37,6, saturasi osigen 92%, dari pembicara status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya 4 adanya ronki pada keduanya lapang paru, untuk abdomen, asli tampak distensi dengan bising usus yang menurun, extremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya hipokal semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari, untuk obat-obatan lain dosis di pertanggahan tetap. Untuk infus, cairan di pertanggahan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau, hari ini tolong dipliksaikan BGA-nya. Terima kasih.",
+      "processing_time": 52.34404139989056
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.27488151658767773,
+      "metrics": {
+        "wer": 0.27488151658767773,
+        "cer": 0.0688976377952756,
+        "word_accuracy": 72.51184834123224,
+        "char_accuracy": 93.11023622047244,
+        "ref_word_count": 211,
+        "hyp_word_count": 202,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1479
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59.886, frekuensi napas 17, suhu pasien 37.6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen asi tampak distensi dengan bising usus yang menurun. Ekstremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis dipertanggan tetap. Untuk infus, cairan dipertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 103.27082709991373
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.33649289099526064,
+      "metrics": {
+        "wer": 0.33649289099526064,
+        "cer": 0.09251968503937008,
+        "word_accuracy": 66.35071090047393,
+        "char_accuracy": 90.74803149606299,
+        "ref_word_count": 211,
+        "hyp_word_count": 207,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1478
+      },
+      "hypothesis": " Pasien Didik Sunardi perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakeal selang ETT-nya masih relativ banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pembariksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59 hd86, frekuensi napas 17, dan suhu pasien 37,6, saturasi oksigen 92%. Dari pembariksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya adanya ronki pada keduanya lapang paru untuk abdomen, asli tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pembelisan penunjam didapatkan hb menurun jadi 8,3, dengan hasil electrolyte adanya hippocal semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekalisa hari, untuk obat-obatan lain dosis di pertan kan tetap. Untuk infus, cairan di pertan kan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 53.04150159994606
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.0
+      },
+      "score": 0.27488151658767773,
+      "metrics": {
+        "wer": 0.27488151658767773,
+        "cer": 0.0688976377952756,
+        "word_accuracy": 72.51184834123224,
+        "char_accuracy": 93.11023622047244,
+        "ref_word_count": 211,
+        "hyp_word_count": 202,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1479
+      },
+      "hypothesis": " Pasien didik Sunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksion Endotrakeal selang ETT-nya masih relatif banyak lendirnya. Tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pemeriksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan daras 156x59.886, frekuensi napas 17, suhu pasien 37.6, saturasi osigen 92%. Dari pemeriksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya ronki pada kedua lapang paru untuk abdomen asi tampak distensi dengan bising usus yang menurun. Ekstremitas pasien didapatkan adanya pitting edema. Dari hasil pemeriksaan penunjam, didapatkan HP menurun, jadi 8,3, dengan hasil electrolyte adanya Hippocal Semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 107. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator masih dengan gagal napas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi terlebih lanjut. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari. Untuk obat-obatan lain, dosis dipertanggan tetap. Untuk infus, cairan dipertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 93.20023600000422
+    },
+    {
+      "params": {
+        "beam_size": 2,
+        "best_of": 1,
+        "compression_ratio_threshold": 2.6,
+        "condition_on_previous_text": true,
+        "fp16": false,
+        "logprob_threshold": -0.5,
+        "no_speech_threshold": 0.6,
+        "temperature": 0.2
+      },
+      "score": 0.3175355450236967,
+      "metrics": {
+        "wer": 0.3175355450236967,
+        "cer": 0.08661417322834646,
+        "word_accuracy": 68.24644549763033,
+        "char_accuracy": 91.33858267716536,
+        "ref_word_count": 211,
+        "hyp_word_count": 207,
+        "ref_char_count": 1524,
+        "hyp_char_count": 1498
+      },
+      "hypothesis": " Pasien didiksunardi, perkembangan hari ini tidak ada demam, pasien masih batuk-batuk dan produksi lendir dari Saksian Endotrakeal selang ETT-nya masih relatif banyak lendirnya, tapi cenderung cair dan warnanya lebih cernih dibandingkan kemarin. Untuk produksi urin, tampak baik tidak terlihat adanya kekeruhan pada produksi urinnya. Dari pembariksaan fisik, kesadaran pasien komposmentis masih tampak sakit berat dengan tekanan darah 156x59, heart rate 86, frekuensi napas 17, dan suhu pasien 37,6, saturasi osigen 92%. Dari pembariksaan status generalis, didapatkan pasien terkesan anemis dengan masih terdapat adanya adanya ronki pada keduanya lapang paru, untuk abdomen, asli tampak distensi dengan bising usus yang menurun. Extremitas pasien didapatkan adanya pitting edema. Dari hasil pembelisan penunjang, didapatkan habi menurun, jadi 8,3, dengan hasil elektrolit, adanya hipokal semi 1,89, dan kemudian ureum pasien sudah mengalami penurunan dari sebelumnya 150 sekarang 100 suju. Kesan hari ini pasien masih belum bisa dilakukan wining ventilator, masih dengan gagana pas, kemudian masih mengalami ileus paralytik, dan kemudian mengalami anemia yang memang belum di eksplorasi. Untuk program hari ini, untuk obatan fluconaso diturunkan dosisnya jadi 150mg sekali sehari, untuk obat-obatan lain dosis di pertanggan tetap. Untuk infus, cairan di pertanggan tetap, untuk diet bisa ditingkatkan bertahap. Untuk kurin agar tetap di pantau dan hari ini tolong dipliksakan BGA-nya. Terima kasih.",
+      "processing_time": 51.573405299917795
+    }
+  ],
+  "total_combinations": 16,
+  "timestamp": "2026-01-14T11:34:36.081744"
+}

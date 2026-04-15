@@ -1,0 +1,7 @@
+# Additional packages for experimental fine-tuning
+# Keep separate from main service requirements to avoid bloating production image.
+peft==0.11.1
+accelerate==0.34.2
+transformers==4.44.2
+jiwer==3.0.4  # optional WER metric
+soundfile==0.12.1
