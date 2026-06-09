@@ -27,7 +27,7 @@
               "    else if (path.endsWith('.wav')) mime = 'audio/wav';",
               "    else if (path.endsWith('.ogg')) mime = 'audio/ogg';",
               "    pm.collectionVariables.set('MIME_TYPE', mime);",
-              "    console.log('MIME_TYPE set to', mime);",
+              "    console.log('MIME_TYPE set to', mime);",F
               "  } catch (e) {",
               "    console.error('Error reading file info', e);",
               "  }",
@@ -132,7 +132,7 @@
     }
   ],
   "variable": [
-    { "key": "GEMINI_API_KEY", "value": "AIzaSyDUAsFwgnR_VZfo6e_WrAen87hVWHJgKy0" },
+    { "key": "GEMINI_API_KEY", "value": "" },
     { "key": "NUM_BYTES", "value": "" },
     { "key": "MIME_TYPE", "value": "" },
     { "key": "AUDIO_PATH", "value": "C:/Users/QIS-065/Downloads/WhatsApp Audio 2025-09-19 at 12.52.07_32a280b1.mp3" },
